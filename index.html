@@ -168,10 +168,13 @@ function trackMaps() {
     </a>
 
     <!-- GOOGLE MAPS -->
-    <a class="link"
-       href="https://www.google.com/maps/search/?api=1&query=20.57314298383234, -100.41113830166384"
-       target="_blank"
-       onclick="trackMaps()">
+   <a class="link"
+        href="https://www.google.com/maps/search/?api=1&query=Servikturs+Travels+Hacienda+La+Griega+120+Jardines+de+la+Hacienda+Querétaro"
+        target="_blank"
+        onclick="gtag('event','click_ubicacion',{
+         'event_category':'contacto',
+         'event_label':'google_maps_nombre'
+         });">
         <i class="fas fa-map-marker-alt"></i> Ubicación
     </a>
 
