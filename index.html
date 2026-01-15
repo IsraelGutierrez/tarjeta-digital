@@ -7,13 +7,14 @@
 <title>Serrvikturs | Contacto</title>
 
 <!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6330221891"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HNVPDN2BWC"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-6330221891');
+  gtag('config', 'G-HNVPDN2BWC');
 </script>
+
 
 <!-- Iconos -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -127,6 +128,22 @@ p {
     opacity: 0.9;
 }
 
+style>
+/* ===========================
+   BOTÓN TAXI DESTACADO
+=========================== */
+.taxi {
+    background: #facc15; /* amarillo taxi */
+    color: #111827;
+    font-weight: 700;
+}
+
+.taxi:hover {
+    background: #eab308;
+    color: #111827;
+    transform: scale(1.03);
+}
+
 /* ===========================
    FOOTER
 =========================== */
@@ -160,6 +177,16 @@ function trackMaps() {
     <!-- GUARDAR CONTACTO -->
     <a class="link save-contact" href="https://israelgutierrez.github.io/tarjeta-digital/serrvikturs_travels.vcf">
         <i class="fas fa-address-card"></i> Guardar Contacto
+    </a>
+
+    <!-- SERVICIO DE TAXI -->
+    <a class="link taxi"
+   href="tel:+524423300738"
+   onclick="gtag('event','click_taxi',{
+       'event_category':'contacto',
+       'event_label':'servicio_taxi'
+   });">
+    <i class="fas fa-taxi"></i> Servicio de Taxi
     </a>
 
     <!-- LLAMADA -->
@@ -212,4 +239,4 @@ function trackMaps() {
 </div>
 
 </body> 
-</html>               
+</html>                
